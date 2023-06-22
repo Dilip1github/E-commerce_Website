@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+</head>
+<body>
+    <h1 id="fg-heading" class="fg-heading">Reset your password</h1>
+    <form id="fgform" name="fgform" action="/forgot"  method="post" class="fgform">
+        <div class="forgot-form">
+            <label for="userid" id="fg-lb">Enter your UserID</label>
+            <input type="text" name="fguserid" class="fguserid" id="fguserid" required>
+            <div class="error"></div>
+        </div>
+        <div class="forgot-form">
+            <label for="password" id="fg-lb">Enter your new Password</label>
+            <input type="password" name="fgpassword" class="fgpassword" id="fgpassword" required>
+            <div class="error"></div>
+        </div>
+        <div class="forgot-form">
+            <label for="cpassword" id="fg-lb">Enter your Confirm Password</label>
+            <input type="password" name="fgcpassword" class="fgcpassword" id="fgcpassword" required>
+            <div class="error"></div>
+        </div>
+        <div class="forgot-form">
+            <input id="submit" class="submit" type="submit" value="Change">
+            <a href="/login"><input type="button" class="fgbsubmit" value="Back"></a>
+        </div>
+    </form>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>

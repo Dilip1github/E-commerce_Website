@@ -1,0 +1,599 @@
+body{
+    background: linear-gradient(to right,rgb(81, 224, 71),white);
+    background-attachment: fixed;
+    font-family: cursive;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Style for the login.html*/
+/*Style for form*/
+
+.myloginform{
+    height: 395px;
+    width: 350px;
+    background-color: #09c372;
+    border-radius: 23px;
+    margin-left: 27rem;
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+}
+
+/* Style for form userid,password,error */
+
+.login-user{
+    margin-right: 1rem;
+}
+.lguserid,.lgpassword {
+    height: 25px;
+    width: 11rem;
+    border-radius: 7px;
+    margin-top: 4rem;
+}
+.login-user input:focus {
+    outline: 0;
+}
+.login-user .error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    height: 13px;
+    margin-left: 3rem;
+}
+
+.login-user.success input {
+    border-color: #09c372;
+}
+.login-user.error input {
+    border-color: red;
+}
+
+/*Style for butoon and anchor tag */
+
+#good{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    word-spacing: 20px;
+}
+
+/*Style for submit id*/
+
+#submit{
+    height: 2rem;
+    width: 5rem;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #09c372;
+    background: linear-gradient(to right,black,green);
+}
+#submit:hover{
+    color: white;
+}
+
+/* Style for register value*/
+
+#register{
+    height: 2rem;
+    text-decoration: none;
+    width: 5rem;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #09c372;
+    background: linear-gradient(to right,black,green);
+}
+#register,#aregister:hover{
+    color: white;
+}
+#aregister{
+    color: #09c372;
+    text-decoration: none;
+}
+
+/* Style for forgot password */
+
+#forgot{
+    color: black;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 15px;
+}
+
+#forgot:hover{
+    color: white;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* Style for forgot.html */
+
+/*Style for fgform*/
+
+.fgform{
+    height: 350px;
+    width: 300px;
+    background-color: #09c372;
+    background-attachment: fixed;
+    border-radius: 10px;
+    margin-left: 31rem;
+    margin-top: 3rem;
+}
+
+/*Style for heading h1*/
+.fg-heading{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*Style for div tag*/
+
+.forgot-form{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for label*/
+
+.forgot-form #fg-lb{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/*Style for input tag*/
+
+.forgot-form input{
+    border-radius: 20px;
+    height: 20px;
+    width: 12rem;
+    font-size: 15px;
+}
+/* Style for submit input*/
+
+.fgbsubmit{
+    margin-top: 1.5rem;
+    height: 2rem;
+    color: rgb(235, 226, 226);
+    background: linear-gradient(to right,black,green);
+    border-radius: 10px;
+    font-size: 20px
+}
+
+.fgbsubmit:hover{
+    color:black;
+    background: linear-gradient(to right,green,white);
+}
+
+.forgot-form input:focus {
+    outline: 0;
+}
+
+/*Style for errors*/
+
+.forgot-form .error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    height: 13px;
+    margin-left: 3rem;
+}
+
+.forgot-form.success input {
+    border-color: #09c372;
+}
+.forgot-form.error input {
+    border-color: red;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* Style for index.html registration*/
+
+/* Style for myform*/
+
+.myform{
+    height: 450px;
+    width: 300px;
+    background-color: #09c372;
+    background-attachment: fixed;
+    margin-top: 4rem;
+    margin-left: 30rem;
+    border-radius: 10px;
+}
+
+/* Style for class name input-form */
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin-left: 2rem;
+}
+
+/* Style for label tag */
+
+.input-form label{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Style for input tag */
+
+.input-form input{
+    height: 18px;
+    margin-top: 1rem;
+    width: none;
+    border-radius: 8px;
+}
+
+/* Style for button or submit input*/
+
+#indsubmit{
+    background: linear-gradient(to right,black,green);
+    height: 2rem;
+    width: 6rem;
+    margin-top: 10px;
+    margin-left: 4.5rem;
+    font-size: 18px;
+    color: #09c372;
+}
+
+#indsubmit:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Style for anchor tag */
+
+.input-form a{
+    width: 1rem;
+    margin-left: 13rem;
+    font-size: 20px;
+    color: black;
+}
+
+.input-form a:hover{
+    color: white;
+}
+
+/* Style for h1 tag heading */
+
+.myform h1{
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* Style for output.html */
+
+/* Style for opform*/
+
+.opform{
+    background-attachment: fixed;
+    text-align: center;
+    margin-left: 12rem;
+    padding-top: 4rem;
+    padding-bottom: 20px;
+}
+
+/* Style for opbtn */
+
+.opbtn{
+    background: linear-gradient(to right,black,green);
+    color: #09c372;
+    width: 8rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.opbtn:hover{
+    background: black;
+    color:white;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* Style for success.html */
+
+/* Style for menu-bar near div tag*/
+
+.menu-bar{
+    box-sizing: border-box;
+    background: linear-gradient(to left,black,green);
+    text-align: center;
+}
+
+/* Style for inside div tag for succ-main for Home */
+
+.succ-main .succ-active{
+    margin-right: 15rem;
+}
+
+.succ-main .succ-active:hover{
+    color:black;
+    background: linear-gradient(to right,rgb(81, 224, 71),white);
+}
+
+/* Style for logout category order --- contact us */
+
+.succ-main .succ-mainoption a{
+    color: white;
+}
+
+.succ-main .succ-active a{
+    color: white;
+}
+
+.succ-main .succ-mainoption{
+    margin-right: -1.5rem;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 10px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.succ-active, .menu-bar ul li:hover{
+    background: linear-gradient(to right,black,green);
+    color: wheat;
+    border-radius: 3px;
+}
+
+/* Style for menu1 inside catagories */
+
+.menu1{
+    display: none;
+}
+
+.menu-bar ul li:hover .menu1{
+    display: block;
+    position:absolute;
+    background: linear-gradient(to right,black,green);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .menu1 ul{
+    display: block;
+    margin: 10px;
+    margin-left: 1rem;
+}
+
+.menu-bar ul li:hover .menu1 ul li{
+    width: 125px;
+    padding: 8px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .menu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .menu1 ul li a:hover{
+    color: #09c372;
+}
+
+/* Style for images */
+
+#phoneheading{
+    color: green;
+    font-size: 30px;
+    margin-top: 4rem;
+    margin-left: 37rem;
+    text-decoration: underline;
+}
+
+.main-phones{
+    display: flex;
+    margin-top: 2rem;
+    background-color: black;
+    height: 34rem;
+}
+
+.fig-phone1,.fig-phone2,.fig-phone3{
+    margin-top: 26px;
+}
+.main-phones img{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+}
+
+.fig-phone2,.fig-phone3,.fig-phone1 figcaption,a{
+    text-align: center;
+    color: wheat;
+}
+
+.fig-phone1 button{
+    height: 25px;
+    width: 10rem;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+
+.fig-phone1 #fig-btn{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.fig-phone2 button{
+    height: 25px;
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.fig-phone2 #fig-btn{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.fig-phone3 button{
+    height: 25px;
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.fig-phone3 #fig-btn{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Style for laptops */
+
+#laptop{
+    color:green;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.main-laptops{
+    display: flex;
+    background-color:black;
+    margin-top: 6rem;
+    height: 35rem;
+}
+
+.main-laptops img{
+    height:390px;
+    width: 400px;
+    margin-top: 3rem;
+    padding: 10px;
+}
+
+.main-laptops .lap-fig{
+    text-align: center;
+}
+
+.main-laptops figcaption{
+    color: bisque;
+    text-align: center;
+}
+
+.main-laptops button{
+    height: 25px;
+    width: 10rem;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+
+.main-laptops #lpfig-a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Style for furniture */
+
+#fur-heading{
+    color:green;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.main-furniture{
+    display: flex;
+    background-color:black;
+    margin-top: 6rem;
+    height: 35rem;
+}
+
+.main-furniture img{
+    height:390px;
+    width: 400px;
+    padding: 10px;
+    margin-top: 3rem;
+}
+
+.main-furniture .fur-fig{
+    text-align: center;
+}
+
+.main-furniture figcaption{
+    color: bisque;
+    text-align: center;
+}
+
+.main-furniture button{
+    height: 25px;
+    width: 10rem;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+
+.main-furniture #furfig-a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Style for Dress */
+
+#dress-heading{
+    color:green;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.main-dress{
+    display: flex;
+    background-color:black;
+    margin-top: 5rem;
+    height: 35rem;
+}
+
+.main-dress img{
+    height:390px;
+    width: 400px;
+    padding: 10px;
+    margin-top: 3rem;
+}
+
+.main-dress .dres-fig{
+    text-align: center;
+}
+
+.main-dress figcaption{
+    color: bisque;
+    text-align: center;
+}
+
+.main-dress button{
+    height: 25px;
+    width: 10rem;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+
+.main-dress #drefig-a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}

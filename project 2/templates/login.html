@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+</head>
+<body>
+    <form id="lgform" name="lgform" action="/under" method="POST" class="myloginform">
+        <h1>Login</h1>
+        <div class="login-user">
+            <label for="lguserid">UserID</label>
+            <input type="text" name="lguserid" class="lguserid" id="lguserid">
+            <div class="error"></div>
+        </div>
+        <div class="login-user">
+            <label for="lgpassword">Password</label>
+            <input type="password" name="lgpassword" class="lgpassword" id="lgpassword">
+            <div class="error"></div>
+        </div>
+        <div class="login-user" id="good">
+            <input type="submit" id="submit" value="Login">
+            <button class="btn" id="register"><a href="/create" id="aregister">Register</a></button>
+        </div>
+        <div>
+            <a href="/forgotpassword" id="forgot">forgot password</a>
+        </div>
+    </form>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <div class="menu-bar" id="menu-bar">
+        <ul class="succ-main" id="succ-main">
+            <li class="succ-active" id="succ-mainoption"><a href="#phoneheading">Home</a></li>
+            <li class="succ-mainoption" id="succ-mainoption"><a href="/login">Logout</a></li>
+            <li class="succ-mainoption" id="succ-mainoption"><a href="#">Categories</a>
+                <div class="menu1">
+                    <ul>
+                        <li><a href="#phoneheading">Mobile Phones</a></li>
+                        <li><a href="#laptop">Laptops</a></li>
+                        <li><a href="#fur-heading">Furnitures</a></li>
+                        <li><a href="#dress-heading">Dress</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="succ-mainoption" id="succ-mainoption"><a href="#">Orders</a>
+                <div class="menu1">
+                    <ul>
+                        <li><a href="#">Order Details</a></li>
+                        <li><a href="#">Order Summary</a></li>
+                    </ul>
+                </div>            
+            </li>
+            <li class="succ-mainoption" id="succ-mainoption"><a href="#">Your Account</a>
+                <div class="menu1">
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="/payment">Address</a></li>
+                        <li><a href="#">Bank Details</a></li>
+                    </ul>
+                </div>           
+            </li>
+            <li class="succ-mainoption" id="succ-mainoption"><a href="#">About Us</a>
+                <div class="menu1">
+                    <ul>
+                        <li><a href="https://www.amazon.in">Click Here</a></li>
+                    </ul>
+                </div>            
+            </li>
+            <li class="succ-mainoption" id="succ-mainoption"><a href="#">Contact us</a>
+                <div class="menu1">
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Categories field -->
+    <div class="category" id="category">
+        <h2 id="phoneheading">Phones</h2>
+        <div class="main-phones">
+            <div class="iphone1" id="iphone1">
+                <figure class="fig-phone1" id="fig-phone1">
+                    <img src="{{url_for('static',filename='images/iphone1.jpeg')}}" alt="not found">
+                    <figcaption class="fig"><a href="#">Vivo v25 Pro</a></figcaption>
+                    <figcaption>₹75,000/-</figcaption>
+                    <button><a href="/payment" id="fig-btn">Buy</a></button>
+                </figure>
+            </div>
+            <div class="iphone2" id="iphone2">
+                <figure class="fig-phone2" id="fig-phone2">
+                    <img src="{{url_for('static',filename='images/iphone3.jpg')}}" alt="not found">
+                    <figcaption class="fig"><a href="#">Samsung Ultra</a></figcaption>
+                    <figcaption>₹90,000/-</figcaption>
+                    <button><a href="/payment" id="fig-btn">Buy</a></button>
+                </figure>
+            </div>
+            <div class="iphone3" id="iphone3">
+                <figure class="fig-phone3" id="fig-phone3">
+                    <img src="{{url_for('static',filename='images/iphone2.5.JPG')}}" alt="not found">
+                    <figcaption class="fig"><a href="#">Apple iPhone 13</a></figcaption>
+                    <figcaption>₹1,10,000/-</figcaption>
+                    <button><a href="/payment" id="fig-btn">Buy</a></button>
+                </figure>
+            </div>
+        </div>
+        <!-- Code for Laptop -->
+        <h1 id="laptop">Laptop</h1>
+        <div class="main-laptops" id="main-laptops">
+            <div class="laptop1" id="laptop1">
+                <figure class="fig-laptop1" id="fig-laptop1">
+                    <img src="{{url_for('static',filename='images/laptop1.jpg')}}" alt="not found">
+                    <figcaption class="lap-fig"><a href="#">Lenovo IdeaPad 3</a></figcaption>
+                    <figcaption>₹45,000/-</figcaption>
+                    <button><a href="/payment" id="lpfig-a">Buy</a></button>
+                </figure>
+            </div>
+            <div class="laptop2" id="laptop2">
+                <figure class="fig-laptop2" id="fig-laptop2">
+                    <img src="{{url_for('static',filename='images/laptop2.jpg')}}" alt="not found">
+                    <figcaption class="lap-fig"><a href="#">Dell 11'' HD IPS Chromebook</a></figcaption>
+                    <figcaption>₹80,000/-</figcaption>
+                    <button><a href="/payment" id="lpfig-a">Buy</a></button>
+                </figure>
+            </div>
+            <div class="laptop3" id="laptop3">
+                <figure class="fig-laptop3" id="fig-laptop3">
+                    <img src="{{url_for('static',filename='images/laptop3.jpg')}}" alt="not found">
+                    <figcaption class="lap-fig"><a href="#">Samsung XE303C12-A01US</a></figcaption>
+                    <figcaption>₹1,00,000/-</figcaption>
+                    <button><a href="/payment" id="lpfig-a">Buy</a></button>
+                </figure>
+            </div>
+        </div>
+        <!-- Furnitures -->
+        <h1 id="fur-heading">Furnitures</h1>
+        <div class="main-furniture" id="main-furniture">
+            <div class="furniture1" id="furniture1">
+                <figure class="fig-furniture1" id="fig-furniture1">
+                    <img src="{{url_for('static',filename='images/furniture1.jpg')}}" alt="not found">
+                    <figcaption class="fur-fig"><a href="#">Elegant Leatherette Gaming Chair</a></figcaption>
+                    <figcaption>₹9,799/-</figcaption>
+                    <button type=""><a href="/payment" id="furfig-a">Buy</a></button>
+                </figure>
+            </div>
+            <div class="furniture2" id="furniture2">
+                <figure class="fig-furniture2" id="fig-furniture2">
+                    <img src="{{url_for('static',filename='images/furniture2.webp')}}" alt="not found">
+                    <figcaption class="fur-fig"><a href="#">Leatherette Bean Bag</a></figcaption>
+                    <figcaption>₹3,000/-</figcaption>
+                    <button type=""><a href="/payment" id="furfig-a">Buy</a></button>
+                </figure>
+            </div>
+            <div class="furniture3" id="furniture3">
+                <figure class="fig-furniture3" id="fig-furniture3">
+                    <img src="{{url_for('static',filename='images/furniture3.webp')}}" alt="not found">
+                    <figcaption class="fur-fig"><a href="#">Sofa Cum Bed</a></figcaption>
+                    <figcaption>₹56,999/-</figcaption>
+                    <button type=""><a href="/payment" id="furfig-a">Buy</a></button>
+                </figure>
+            </div>
+        </div>
+        <!-- Dress -->
+        <h1 id="dress-heading">Dress</h1>
+        <div class="main-dress" id="main-dress">
+            <div class="dress1" id="dress1">
+                <figure class="fig-dress1" id="fig-dress1">
+                    <img src="{{url_for('static',filename='images/dress1.webp')}}" alt="not found">
+                    <figcaption class="dres-fig"><a href="#">Spread Collar Shirt with Patch Pocket</a></figcaption>
+                    <figcaption>₹999/-</figcaption>
+                    <button><a href="/payment" id="drefig-a">Buy</a></button>
+                </figure>
+            </div>
+            <div class="dress2" id="dress2">
+                <figure class="fig-dress2" id="fig-dress2">
+                    <img src="{{url_for('static',filename='images/dress2.webp')}}" alt="not found">
+                    <figcaption class="dres-fig"><a href="#">Cargo Straight Pants</a></figcaption>
+                    <figcaption>₹1,299/-</figcaption>
+                    <button type="button"><a href="/payment" id="drefig-a">Buy</a></button>
+                </figure>
+            </div>
+            <div class="dress3" id="dress3">
+                <figure class="fig-dress3" id="fig-dress3">
+                    <img src="{{url_for('static',filename='images/dress3.webp')}}" alt="not found">
+                    <figcaption class="dres-fig"><a href="#">Checked Shirt with Patch Pocket</a></figcaption>
+                    <figcaption>₹1,999/-</figcaption>
+                    <button><a href="/payment" id="drefig-a">Buy</a></button>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
